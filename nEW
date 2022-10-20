@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>회원가입폼</title>
+        <style>
+            .a1 {width: 100px;}
+
+        </style>
+    </head>
+    <body>
+        <form method="login"> 
+            
+            <fieldset>
+                <legend>01 로그인 정보</legend>
+                    <table>              
+                                <tr>
+                                    <td><span>&#x2714;</span>사용자ID</td>
+                                    <td><input type="text" placeholder="영문이름만사용"></td>
+                                    <td><button type="button" >중복확인</button> 띄어쓰기 없는 영문소문자,숫자조합</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td><span>&#x2714;</span>비밀번호</td>
+                                    <td><input type="password"></td>
+                                    <td>띄어쓰기 없는 영문소문자,숫자조합</td>
+                                </tr>
+                                <tr>
+                                    <td><span>&#x2714;</span>비밀번호확인</td>
+                                    <td><input type="password"></td>
+                                    <td>비밀번호를 한번더 입력해주세요</td>
+                                </tr>
+                    </table>
+            </fieldset>
+            <fieldset>
+                <legend>02 개인 정보</legend>
+                    <table>            
+                                <tr>
+                                    <td><span>&#x2714;</span>이름</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>주민등록번호</td>
+                                    <td><input type="number" class="a1"> - <input type="number" class="a1"></td>
+                                </tr>
+                                <tr>
+                                    <td >생년월일</td>
+                                    <td>
+                                        <input type="number" style="width:60px;"> 년
+                                        <input type="number" style="width:60px;"> 월
+                                        <input type="number" style="width:60px;"> 일
+                                        <input type="radio" name="birth">양력</button>
+                                        <input type="radio" name="birt">음력</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span>&#x2714;</span>연락처</td>
+                                    <td>
+                                        <select>
+                                            <option>==선택==</option>
+                                            <option>02</option>
+                                            <option>031</option>
+                                            <option>032</option>
+                                        </select>
+                                        - <input type="number" class="a1"> - <input type="number" class="a1">
+                                        <input type="radio" name="house">자택
+                                        <input type="radio" name="house">직장
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span>&#x2714;</span>휴대전화</td>
+                                    <td class="b1"><input type="number" class="a1"> - <input type="number" class="a1"> - <input type="number" class="a1"></td>
+                                </tr>
+                                <tr>
+                                    <td><span>&#x2714;</span>E-mail주소</td>
+                                    <td><input type="text" placeholder="example@example.com"></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3"><span>&#x2714;</span>주소</td>
+                                    <td>
+                                        <input type="number" style="width:50px;"> - <input type="number" style="width:50px;">
+                                        <button type="button">우편번호찾기</button>
+                                        <input type="radio" name="where">자택
+                                        <input type="radio" name="where">직장
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                    </table>
+            </fieldset>
+            <fieldset>
+                <legend>03 기타정보</legend>
+                    <table>
+                        <div>              
+                                <tr>
+                                    <td>직업</td>
+                                        <td>
+                                            <select>
+                                                <option>==선택하세요==</option>
+                                                <option>학생</option>
+                                                <option>사무직</option>
+                                                <option>주부</option>
+                                            </select>
+                                        </td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>회사명(학교)</td>
+                                    <td>
+                                    <input type="text">
+                                    <button type="button">찾기</button>
+                                    <input type="radio" name="jobadress">자택
+                                    <input type="radio" name="jobadress">직장
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>사업자번호</td>
+                                    <td><input type="number"></td>
+                                </tr>
+                                <tr>
+                                    <td>부서명(학과)</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>직위(학년)</td>
+                                    <td><input type="number"></td>
+                                </tr>
+                                <tr>
+                                    <td>관심분야</td>
+                                    <td>
+                                        <select>
+                                            <option>==선택하세요==</option>
+                                            <option>IT</option>
+                                            <option>공학</option>
+                                            <option>인문</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>TP웹진수신</td>
+                                    <td>
+                                        <input type="radio" name="agree">수신동의
+                                        <input type="radio" name="agree">수신하지않음
+                                        (TP에서 제공하는 Webzine 서비스를 받아보시겠습니까?)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>홈페이지주소</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>자기소개</td>
+                                    <td>
+                                        <textarea cols="50" rows="5"></textarea>
+                                    </td>
+                                </tr>
+                        </div>
+                    </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <table>
+                    <tr>
+                        <td>
+                            <button type="button">가입
+                            <button type="button">취소
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+    </body>
+</html>
